@@ -1,107 +1,377 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bigode Store</title>
+    <title>bigodeStore</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <img src="./img/Logo.svg" alt="Logo">
-        <nav>
-            <a href="">Games</a>
-            <a href="">Browse Games</a>
-            <a href="">Store</a>
-        </nav>
-        <div class="btns">
-            <a href="">Sign up</a>
-            <a href="">Login</a>
-        </div>
-        <div class="promocao">
-            <h1>MultiVersus</h1>
-            <p>Now officially free to play for all Xbox users.</p>
-            <a href="">Get in now!</a>
+
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">bigode<span>Store</span></div>
+            <nav>
+                <a href="#">Games</a>
+                <a href="#">Browse Games</a>
+                <a href="#">Store</a>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-primary">Sign up</button>
+                <button class="btn btn-outline">Login</button>
+            </div>
         </div>
     </header>
-    <section>
-        <p>Why bigodeStore?</p>
-        <p>We are the official Xbox partner in Indonesia that provides official video games.</p>
-        <div class="cards">
-            <div class="card1">
-                <img src="./img/card1.svg" alt="card1">
-                <p>5000+ video games available</p>
-            </div>
-            <div class="card2">
-                <img src="./img/card2.svg" alt="card2">
-                <p>Trusted by 100.000+ customers</p>
-            </div>
-            <div class="card3">
-                <img src="./img/card3.svg" alt="card3">
-                <p>Available for all Xbox consoles</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>Games Genres</h2>
-        <p>See all genres</p>
-        <div class="cards2">
-            <div class="card4">
-                <p>Strategy</p>
-                <img src="./img/card4.svg" alt="">
-            </div>
-            <div class="card5">
-                <p>FPS</p>
-                <img src="./img/card5.svg" alt="">
 
-            </div>
-            <div class="card6">
-                <p>RPG</p>
-                <img src="./img/card6.svg" alt="">
-            </div>
-            <div class="card7">
-                <p>Puzzle</p>
-                <img src="img/card7.svg" alt="">
-            </div>
-            <div class="card8">
-                <p>Role Playing</p>
-                <img src="img/card8.svg" alt="">
-            </div>
-            <div class="card9">
-                <p>Sports</p>
-                <img src="img/card9.svg" alt="">
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <img src="https://images.contentstack.io/v3/assets/blt881dc25828452f14/blt809633390098555e/62a938c35390e44537234676/MVS_Keyart_1920x1080.jpg" alt="MultiVersus Banner" class="hero-bg">
+        <div class="container hero-content">
+            <h1>MultiVersus</h1>
+            <p>Now officially free to play for all<br>Xbox users.</p>
+            <button class="btn btn-primary btn-large">Get in now!</button>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="container">
+            <h2>Why bigodeStore?</h2>
+            <p class="subtitle">We are the official Xbox partner in Indonesia that<br>provides official video games.</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/686/686589.png" alt="Controller">
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4436/4436481.png" alt="Trusted">
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1/1321.png" alt="Xbox">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2>Best Seller Games</h2>
-        <div class="gamecards">
-            <div class="gamecard1">
-                <img src="img/gamecard.svg" alt="">
-                <p>Minecraft</p>
-                <div class="price">
-                    <p>Rp 260.000</p>
-                    <div class="porcentagem">
-                        <p>90%</p>
-                        <div class="desconto">
-                            <p>Rp 260.000</p>
+
+    <section class="stats-bar">
+        <div class="container stats-flex">
+            <div class="stat-item">
+                <strong>5000+ video games</strong>
+                <span>available</span>
+            </div>
+            <div class="stat-item">
+                <strong>Trusted by 100.000+</strong>
+                <span>customers</span>
+            </div>
+            <div class="stat-item">
+                <strong>Available for all Xbox</strong>
+                <span>consoles</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="genres-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Games Genres</h2>
+                <a href="#" class="see-all">See all genres</a>
+            </div>
+            <div class="genres-grid">
+                <div class="genre-card">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg" alt="Strategy">
+                    <span>Strategy</span>
+                </div>
+                <div class="genre-card">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1240440/header.jpg" alt="FPS">
+                    <span>FPS</span>
+                </div>
+                <div class="genre-card">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg" alt="RPG">
+                    <span>RPG</span>
+                </div>
+                <div class="genre-card">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/260230/header.jpg" alt="Puzzle">
+                    <span>Puzzle</span>
+                </div>
+                <div class="genre-card">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg" alt="Role Playing">
+                    <span>Role Playing</span>
+                </div>
+                <div class="genre-card">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1506830/header.jpg" alt="Sports">
+                    <span>Sports</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bestsellers-section">
+        <div class="container">
+            <h2 class="section-title-left">Best Seller Games</h2>
+            
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/9/9c/Minecraft_capa.png" alt="Minecraft">
+                    </div>
+                    <div class="card-info">
+                        <h3>Minecraft</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 260.000</span>
+                            <span class="discount-badge">90%</span>
+                            <span class="old-price">Rp 260.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Asphalt_9_Legends.jpg" alt="Asphalt 9">
+                    </div>
+                    <div class="card-info">
+                        <h3>Asphalt 9: Legends</h3>
+                        <div class="price-row">
+                            <span class="free-tag">Free Download</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/0/06/TW3_Wild_Hunt_Logo.png" alt="The Witcher 3">
+                    </div>
+                    <div class="card-info">
+                        <h3>The Witcher 3</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 420.000</span>
+                            <span class="discount-badge">25%</span>
+                            <span class="old-price">Rp 590.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Surviving_Mars_cover_art.jpg" alt="Surviving Mars">
+                    </div>
+                    <div class="card-info">
+                        <h3>Surving Mars</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 440.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/8/80/Grand_Theft_Auto_V_capa.png" alt="GTA V">
+                    </div>
+                    <div class="card-info">
+                        <h3>GTA V</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 354.000</span>
+                            <span class="discount-badge">40%</span>
+                            <span class="old-price">Rp 590.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Roblox_Logo.png" style="object-fit: contain; background: #333;" alt="ROBLOX">
+                    </div>
+                    <div class="card-info">
+                        <h3>ROBLOX</h3>
+                        <div class="price-row">
+                            <span class="free-tag">Free Download</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/NBA_2K22_cover_art.jpg/220px-NBA_2K22_cover_art.jpg" alt="NBA 2K22">
+                    </div>
+                    <div class="card-info">
+                        <h3>NBA 2K22</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 297.000</span>
+                            <span class="discount-badge">70%</span>
+                            <span class="old-price">Rp 990.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/Dead_by_Daylight_Steam_header.jpg" alt="Dead by Daylight">
+                    </div>
+                    <div class="card-info">
+                        <h3>Dead by Daylight</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 214.500</span>
+                            <span class="discount-badge">50%</span>
+                            <span class="old-price">Rp 429.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/23/Ark_Survival_Evolved_cover_art.jpg" alt="ARK">
+                    </div>
+                    <div class="card-info">
+                        <h3>ARK: Survival Evolved</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 430.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg" alt="Rocket League">
+                    </div>
+                    <div class="card-info">
+                        <h3>Rocket League</h3>
+                        <div class="price-row">
+                            <span class="free-tag">Free Download</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Forza_Horizon_5_cover_art.jpg" alt="Forza Horizon 5">
+                    </div>
+                    <div class="card-info">
+                        <h3>Forza Horizon 5</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 356.000</span>
+                            <span class="discount-badge">60%</span>
+                            <span class="old-price">Rp 890.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Cities_Skylines_cover_art.jpg" alt="Cities: Skylines">
+                    </div>
+                    <div class="card-info">
+                        <h3>Cities: Skylines</h3>
+                        <div class="price-row">
+                            <span class="price">Rp 590.000</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
-
     </section>
 
-</body>
+    <section class="coming-soon">
+        <div class="container">
+            <h2 class="section-title-white">Coming Soon</h2>
+            <div class="coming-grid">
+                <div class="coming-card card-large">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Call_of_Duty_Modern_Warfare_II_Key_Art.jpg" class="bg-img" alt="Call of Duty">
+                    <div class="coming-content">
+                        <h3>Call of Duty®: Modern<br>Warfare® II</h3>
+                        <button class="btn btn-outline-light">Pre-order now!</button>
+                    </div>
+                </div>
+                
+                <div class="coming-column">
+                    <div class="coming-card card-small">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/df/Resident_Evil_4_remake_cover_art.jpg" class="bg-img" alt="Resident Evil 4">
+                        <div class="coming-content">
+                            <h3>Resident Evil 4 -<br>Remake</h3>
+                            <button class="btn btn-outline-light">Pre-order now!</button>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="coming-card card-large">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202109/0712/7X9t4Yq3Zt6W5R6U3Q8w4e2T.jpg" class="bg-img" alt="NBA2K2022">
+                    <div class="coming-content">
+                        <h3>NBA2K2022</h3>
+                        <button class="btn btn-outline-light">Pre-order now!</button>
+                    </div>
+                </div>
+
+                <div class="coming-card card-small">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/25/Aliens_Dark_Descent_cover_art.jpg" class="bg-img" alt="Alien">
+                    <div class="coming-content">
+                        <h3>ALIEN - Dark<br>Descent</h3>
+                        <button class="btn btn-outline-light">Pre-order now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>12.000+ gamers satisfied</h2>
+            <p class="subtitle">Let’s hear what our customers have to say about their<br>satisfaction with our services and products.</p>
+            
+            <div class="testimonial-grid">
+                <div class="testi-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Jacob Jones" class="avatar">
+                    <h4>Jacob Jones</h4>
+                    <div class="stars">★★★★★</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae ipsum vestibulum porta.</p>
+                </div>
+                <div class="testi-card">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cameron Williamson" class="avatar">
+                    <h4>Cameron Williamson</h4>
+                    <div class="stars">★★★★★</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae ipsum vestibulum porta.</p>
+                </div>
+                <div class="testi-card">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Kristin Watson" class="avatar">
+                    <h4>Kristin Watson</h4>
+                    <div class="stars">★★★★★</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo vitae ipsum vestibulum porta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">bigode<span>Store</span></div>
+            </div>
+            <div class="footer-col">
+                <h5>Menu</h5>
+                <ul>
+                    <li><a href="#">Order tracking</a></li>
+                    <li><a href="#">Store location</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Follow us on:</h5>
+                <div class="social-icons">
+                    <a href="#" class="icon">IG</a>
+                    <a href="#" class="icon">YT</a>
+                    <a href="#" class="icon">TW</a>
+                    <a href="#" class="icon">X</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022 Exstore</p>
+        </div>
+    </footer>
+
+</body>
 </html>
